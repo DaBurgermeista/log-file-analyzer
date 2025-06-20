@@ -1,0 +1,5 @@
+Jun 20 10:01:23 server sshd[12345]: Failed password for invalid user testuser from 192.168.1.10 port 54321 ssh2
+Jun 20 10:02:01 server sshd[12346]: Failed password for root from 192.168.1.10 port 54322 ssh2
+Jun 20 10:03:11 server sshd[12347]: Failed password for admin from 192.168.1.20 port 54323 ssh2
+Jun 20 10:04:19 server sshd[12348]: Accepted password for gooduser from 192.168.1.30 port 54324 ssh2
+Jun 20 10:05:22 server sshd[12349]: Failed password for guest from 192.168.1.10 port 54325 ssh2
