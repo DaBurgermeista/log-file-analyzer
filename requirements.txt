@@ -1,0 +1,4 @@
+# No external libraries needed yet
+# Future suggestions:
+matplotlib>=3.7.0   # for visualization IP counts
+pandas>=2.0.0       # for CSV/JSON export and analysis
