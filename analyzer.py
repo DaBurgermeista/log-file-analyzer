@@ -3,10 +3,15 @@ import argparse
 from collections import defaultdict
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 LOG_PATH = "logs/sample_auth.log"
 
 def parse_log(file_path):
+    if not os.path.exists(file_path):
+        print(f"Log file not found: {file_path}")
+        return {}
+    
     ip_failures = defaultdict(int)
 
     with open(file_path, "r") as f:
@@ -55,12 +60,14 @@ def plot_failed_logins(ip_failures):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze log file for failed SSH login attempts.")
+    parser.add_argument("--logfile", type=str, default="logs/sample_auth.log", help="Path to log file")
     parser.add_argument("--export", action="store_true", help="Export results to CSV")
     parser.add_argument("--plot", action="store_true", help="Plot results as bar chart")
+    
 
     args = parser.parse_args()
 
-    failures = parse_log(LOG_PATH)
+    failures = parse_log(args.logfile)
     print_summary(failures)
 
     if args.export:
