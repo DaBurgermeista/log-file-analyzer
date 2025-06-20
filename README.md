@@ -1,5 +1,13 @@
 # 🕵️‍♂️ Log File Analyzer
 
+![Python Version](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/DaBurgermeista/log-file-analyzer?style=flat-square)
+![Issues](https://img.shields.io/github/issues/DaBurgermeista/log-file-analyzer?style=flat-square)
+![Pull Requests](https://img.shields.io/github/issues-pr/DaBurgermeista/log-file-analyzer?style=flat-square)
+![Built with ❤️](https://img.shields.io/badge/Built%20with-%E2%9D%A4-red?style=flat-square)
+
+
 A simple Python tool to scan Linux-style authentication logs and summarize failed SSH login attempts by IP address.
 
 ---
