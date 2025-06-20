@@ -39,11 +39,15 @@ pip install -r requirements.txt
 ```bash
 python3 analyzer.py
 ```
-3. Export the results to CSV:
+3. Analyze a custom log file:
+```bash
+python3 analyzer.py --logfile path/to/your/logfile.log
+```
+4. Export the results to CSV:
 ```bash
 python3 analyzer.py --export
 ```
-4. Visualize failed logins as a bar chart
+5. Visualize failed logins as a bar chart
 ```bash
 python3 analyzer.py --plot
 ```
