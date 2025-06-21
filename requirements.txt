@@ -1,3 +1,4 @@
 matplotlib>=3.7.0   # for visualization IP counts
 pandas>=2.0.0       # for CSV/JSON export and analysis
 watchdog>=4.0.0      # for monitoring log files
+scapy>=2.5.0         # for packet analysis
